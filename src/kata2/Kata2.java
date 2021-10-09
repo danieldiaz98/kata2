@@ -15,27 +15,12 @@ public class Kata2 {
         
         //Map<Integer, Integer> map = new HashMap<Integer,Integer>();
         
-        Integer [] data = new Integer [15];
-        data[0] = 1;
-        data[1] = 2;
-        data[2] = -4;
-        data[3] = 100;
-        data[4] = 4;
-        data[5] = 5;
-        data[6] = 6;
-        data[7] = 8;
-        data[8] = 2;
-        data[9] = -4;
-        data[10] = -4;
-        data[11] = 2;
-        data[12] = 100;
-        data[13] = 1;
-        data[14] = 1;
+        String[] data = {"Rosa", "Pepe", "María", "Pepe", "Pepe", "Rosa"};
         
         Histogram histo = new Histogram(data);
-        Map<Integer,Integer> histogr = histo.getHistogram();
+        Map<String,Integer> histogr = histo.getHistogram();
 
-        for (Integer key : histogr.keySet()) {
+        for (String key : histogr.keySet()) {
             System.out.println(key + "==>" + histogr.get(key));
         }
     }
